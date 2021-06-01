@@ -1,38 +1,50 @@
-#### 작업예정.!!!
+#### 작업예정.
 - 1달간(프론트엔드)은 주로 UI 계속진행(VS code개발환경) 하면서,
 - 피곤할때, 자바|스프링(이클립스-egov전자정부프레임워크개발환경) 기본언어실습진행.
 - 피곤할때, 오라클DB(SQL디벨러퍼개발환경) Ansi-SQL(표준SQL)기본언어실습진행CRUD.
 - 2달째부터(백엔드), 주로 스프링으로 실습이 진행(납품용-이력서포트폴리오용).
 - VS code에서 만든 UI를 이클립스에서 JSP로 변경 한 후 스프링웹프로젝트를 진행합니다.
 
-#### 20210528(금) 작업예정.
-- 관리자단 admin/board_write.html, board_view.html(댓글Ajax처리)
-- 대시보드 home.html (최근 회원가입정보, 최근 게시물 정보)
-- 관리자단 AdminLTE적용-스프링시간|UI디자인시간 선택 후 아래 작업진행예정
-- (회원관리CRUD-html, 게시판생성관리CRUD-html)
+#### 20210601(화) 작업.
+- ERD기준으로 게시판UI 마무리합니다.-board_write.html 부터 시작
+- 오늘부터는 VS code -> 이클립스에서 작업합니다.
+- 관리자단 AdminLTE적용-스프링시간 선택 후 아래 작업진행예정
+- (회원관리CRUD-jsp, 게시판생성관리CRUD-jsp)
+- html을 분해(1개의 페이지를 2개로 분해,1.header.jsp(메뉴를공통), 2.footer.jsp(공통))
 - 이클립스로 작업한 html 내용을 -> resources 폴더(admin,home,root파일까지)로 배치
-- 스프링 작업의 사작
+- 스프링 작업의 시작
 
-#### 20210527(목) 작업예정.
-- admin/board_list.html 작업ok.
-- 관리자단 AdminLTE적용-UI시간:(게시판CRUD,대시보드)
+#### 20210531(월) 작업.
+- ERD기준으로 게시판UI 수정합니다.
+
+#### 20210528(금) 작업.
+- UI트렌드용어: 카드(트럼프)UI, 뱃지(명찰), 리본(이벤트표시)
+- 소스 인스펙션(소스분석);
+- 데이터를 전송할때 사용 문장=쿼리스트링(QueryString)의 시작은 ?: ?키=value&키=value
+- 뒤로가기 허용하면, 게시물 테러가 가능합니다.
+- 뒤로가기를 허용하지 않게 페이지를 이동하는 방식(Js에서는 location.replace함수사용)
+- 뒤로가기를 허용하는 함수(Js에서는 location.href = '' 사용)
+- 관리자단 admin/board_write.html, board_view.html(댓글Ajax처리)OK.
+- 대시보드 home.html (최근 회원가입정보, 최근 게시물정보) OK.
+
+#### 20210527(목) 작업.
+- admin/board_list.html 작업OK.
+- 관리자단 AdminLTE적용-UI시간:(게시판CRUD-html, 대시보드-html)
 - 관리자단 기본 틀(템플릿): 공통 UI부분 작업OK.
-- Ctrl+k,Ctrl+0 = 코드 축소
-- Ctrl+k,Ctrl+j = 코드 펼침 
+- Ctrl+k, Ctrl+0 = 코드 축소 = Ctrl+k+0 (코드구조 확인)
+- Ctrl+k, Ctrl+j = 코드 펼침 = Ctrl+k+j
 
 #### 20210526(수) 작업.
-- 검색엔진에 최적화? 의미있는 태그를 사용했는가? <headr>, <section>, <footer>, <article> 태그처럼 html5부터 만들어진 태그를 사용하면, 구글검색에 잘 노출된다.
+- 검색엔진에 최적화? 의미있는 태그를 사용했는가? <header>, <section>, <footer>, <article> 태그처럼 html5부터 만들어진 태그를 사용하면, 구글검색에 잘 노출됩니다.
 - 유효성검사? validation 입력값이 제대로된 값인지 확인하는 과정.
 - html5내장된 유효성검사? required(공백체크), type="email"(이메일형식체크)
 , type="password"(입력값을 숨김처리), type="number"(숫자체크)
 - js로 유효성검사? 비밀번호 확인(2개 입력값을 체크)
 - 반응형 서브페이지들(로그인, 회원가입, 마이페이지).
-- HTML5부터는 유효성 검사가 내장되어있기 때문에, JS로 빈칸인지 코딩할 필요가 업음.requred 속성을 태그에 집어넣으면 끝.
-- 기획시, 메인1 CSS 네이밍, 서브1 CSS 네이밍 
-- 과장/이사급이 UI를 2개파일 만듬 또는 테마 포레스트 같은 디자인UI(html+css+js)를 구매 ->기반으로 퍼블리셔,      
-  프론트개발자 CSS나 HTML작업 이어서 함.
+- HTML5부터는 유효성 검사가 내장되어있기 때문에, JS로 빈칸인지 코팅할 필요가 업습니다. required 속성을 태그에 집어넣으면 끝.
+- 기획시, 메인1 CSS 네이밍, 서브1 CSS 네이밍.
+- 과장/이사급이 UI를 2개파일 만듬 또는 테마포레스트 같은 디자인UIhtml+css+js를 구매) ->기반으로 퍼블리셔, 프론트개발자 CSS나 HTML작업 이어서 합니다.
 - 금액이 4000이상 2억 안팎인 프로젝트 자체 UI 사용.
-- 관리자단 AdminLTE적용.(회원관리CRUD, 게시판CRUD, 대시보드)
 
 #### 20210525(화) 작업.
 - css: 계층:조부>부>본인(timnline)>자식(collapse)>손자(time-label)>증손자
